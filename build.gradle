@@ -13,10 +13,12 @@ dependencies {
     implementation 'io.quarkus:quarkus-resteasy-reactive'
     implementation 'io.quarkus:quarkus-arc'
     testImplementation 'io.quarkus:quarkus-junit5'
+    implementation("io.quarkus:quarkus-oidc")
+    implementation("io.quarkus:quarkus-keycloak-authorization")
     testImplementation 'io.rest-assured:rest-assured'
 }
 
-group 'org.acme'
+group 'io.sewah'
 version '1.0.0-SNAPSHOT'
 
 java {
